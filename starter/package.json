@@ -3,6 +3,9 @@
   "description": "Include Bootstrap CSS and JS via the jsDelivr CDN.",
   "version": "0.0.0",
   "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
   "scripts": {
     "start": "serve --listen 3000"
   },
