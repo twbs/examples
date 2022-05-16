@@ -1,10 +1,16 @@
 {
+  "name": "sass-js",
+  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
+  "version": "0.0.0",
   "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
   "scripts": {
     "build": "npm run css",
-    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:assets/css/",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
     "css-lint": "stylelint scss/",
-    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
+    "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix",
     "server": "serve --listen 3000",
     "start": "npm-run-all --parallel watch server",
