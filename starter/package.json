@@ -2,9 +2,10 @@
   "name": "starter",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {},
   "scripts": {
-    "start": "open index.html"
+    "start": "serve --listen 3000"
   },
+  "dependencies": {
+    "serve": "^13.0.2"
   }
 }
