@@ -1,5 +1,6 @@
 {
   "name": "starter",
+  "description": "Include Bootstrap CSS and JS via the jsDelivr CDN.",
   "version": "0.0.0",
   "private": true,
   "scripts": {
