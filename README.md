@@ -14,14 +14,14 @@
 
 ## Directory
 
-starter - CDN links for CSS and JS
-sass-js - import sass (autoprefixer) and js via npm
-sass-js-esm - same as above, but esm for js
-purgecss - import sass w/ purgecss and js via npm
-webpack - sass, js via webpack
-parcel - sass, js via parcel
-react - react-bootstrap?
-icons-starter - CDN link, no bootsrap?
+- [Starter](starter/) – CDN links for our CSS and JS
+- [Sass & JS](sass-js/) — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm
+- [Sass & ESM JS](sass-js-esm/) — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim
+- PurgeCSS - import sass w/ purgecss and js via npm
+- Webpack - sass, js via webpack
+- Parcel - sass, js via parcel
+- React - react-bootstrap?
+- Icons starter - CDN link, no bootsrap?
 
 ## License
 
