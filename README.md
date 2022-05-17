@@ -18,7 +18,7 @@
 - [Sass & JS](sass-js/) — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm
 - [Sass & ESM JS](sass-js-esm/) — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim
 - PurgeCSS - import sass w/ purgecss and js via npm
-- Webpack - sass, js via webpack
+- [Webpack](webpack) - Import and bundle Sass and JS with Webpack
 - Parcel - sass, js via parcel
 - React - react-bootstrap?
 - Icons starter - CDN link, no bootsrap?
