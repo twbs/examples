@@ -12,11 +12,6 @@ module.exports = {
     port: 8080,
     hot: true
   },
-  // devServer: {
-  //   static: {
-  //     directory: path.join(__dirname, 'dist')
-  //   }
-  // },
   module: {
     rules: [
       {
