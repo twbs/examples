@@ -4,7 +4,7 @@ Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaS
 
 ## Edit in browser
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=src/index.html)
+_Unfortunately, Parcel does not support StackBlitz, so you'll have to clone this project to use it._
 
 ## How to use
 
