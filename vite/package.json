@@ -1,0 +1,21 @@
+{
+  "name": "vite",
+  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
+  "version": "0.0.0",
+  "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3"
+  }
+}
