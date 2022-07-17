@@ -22,7 +22,7 @@
 - [Parcel](parcel/) - Sass, JS via Parcel
 - [Vite](vite/) - Sass, JS via Vite
 - React - react-bootstrap?
-- Icons starter - CDN link, no bootsrap?
+- [Bootstrap Icons font](icons-font/) - Import and compile Sass, Stylelint, PurgeCSS, and our icon font
 
 ## License
 
