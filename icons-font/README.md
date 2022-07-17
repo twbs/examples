@@ -1,6 +1,6 @@
 # Bootstrap Icons Font
 
-Include the [Bootstrap Icons](https://icons.getbootstrap.com) fonts with Sass and npm.
+Include the [Bootstrap Icons](https://icons.getbootstrap.com) icon fonts via npm with Sass, Autoprefixer, and PurgeCSS.
 
 ## Edit in browser
 
