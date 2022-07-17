@@ -1,9 +1,3 @@
-# Ignore docs files
-/_site/
-# Hugo files
-/resources/
-/.hugo_build.lock
-
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -39,4 +33,4 @@ Thumbs.db
 
 # Folders to ignore
 /js/coverage/
-/node_modules/
+node_modules
