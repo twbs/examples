@@ -19,7 +19,7 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1",
+    "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1"
   },
   "devDependencies": {
