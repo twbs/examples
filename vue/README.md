@@ -14,8 +14,3 @@ cd examples/vue/
 npm install
 npm start
 ```
-
-## Todo
-
-- [ ] Create icon list Vue components
-- [ ] Create footer component

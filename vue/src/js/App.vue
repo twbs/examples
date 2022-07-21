@@ -1,14 +1,16 @@
 <script setup>
 import Header from '../components/Header.vue'
+import Guides from '../components/Guides.vue'
+import Footer from '../components/Footer.vue'
 </script>
 
 <template>
   <div class="container py-4 px-3 mx-auto">
     <Header />
 
-    <h1>Build Bootstrap with Vite</h1>
+    <h1>Build Bootstrap with Vue</h1>
     <div class="col-lg-8 px-0">
-      <p class="fs-4">You've successfully loaded the Bootstrap + Vite example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a> and uses Vite to compile and bundle our Sass and JavaScript.</p>
+      <p class="fs-4">You've successfully loaded the Bootstrap + Vue example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a> and uses Vue and Vite to compile and bundle our Sass and JavaScript. It also features a handful of custom Vue components.</p>
       <p>If this button appears blue and the link appears purple, you've done it!</p>
     </div>
 
@@ -39,18 +41,8 @@ import Header from '../components/Header.vue'
 
     <hr class="col-1 my-5 mx-0">
 
-    <h2>Guides</h2>
-    <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-    <ul class="icon-list">
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap quick start guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/vite/">Bootstrap Vite guide</a></li>
-      <li><a href="https://getbootstrap.com/docs/5.2/getting-started/build-tools/">Contributing to Bootstrap</a></li>
-    </ul>
+    <Guides />
 
-    <hr class="mt-5 mb-4">
-
-    <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+    <Footer />
   </div>
 </template>
