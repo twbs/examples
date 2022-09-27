@@ -31,10 +31,20 @@ $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #7952b3;
+$primary: #A168DF;
+$grad-start: #772BCB;
+$grad-end: #27054B;
+$dark: #070707;
+$progress-bg: #444444;
+$font-family-sans-serif: 'Nunito Sans', sans-serif;
+$font-weight-bolder: 900;
+$fa-font-path: "../webfonts";
+$accordion-icon-color: #fff;
+$accordion-icon-active-color: #fff;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+
 
 // Required
 @import "bootstrap/scss/functions";
@@ -46,37 +56,42 @@ $success: #7952b3;
 @import "bootstrap/scss/reboot";
 
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
+@import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
-@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/accordion";
+@import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/progress";
+@import "bootstrap/scss/progress";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+// @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/offcanvas"; // Requires transitions
 // @import "bootstrap/scss/placeholders";
 
 // Helpers
 // @import "helpers";
+@import "bootstrap/scss/helpers/color-bg";
+@import "bootstrap/scss/helpers/colored-links";
+@import "bootstrap/scss/helpers/position";
+// @import "bootstrap/scss/helpers/stretched-link";
+// @import "bootstrap/scss/helpers/visually-hidden";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
@@ -86,8 +101,234 @@ $success: #7952b3;
 // Custom styles
 //
 
-@import "icon-list";
+// importing core styling file
+@import "./fontawesome/scss/fontawesome.scss";
 
-body {
-  padding: 1.5rem;
+// our project needs Solid + Brands
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+header {
+  border-bottom: 1px solid #444;
+  
+  .form-control {
+    width: 500px;
+  }
+
+  .drag-vertical {
+    background-image: url('../img/drag-vertical_bg.png');
+    height: 27px;
+    width: 628px;
+    bottom: -34px;
+  }
+}
+
+.text-gray {
+  color: $gray-500;
+}
+
+.btn {
+  border: none;
+  padding: 12px 34px;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.dy-search {
+  width: 30%;
+}
+
+.btn-outline-primary {
+  color: #772BCB;
+  background-color: var(--bs-white);
+
+  &:hover {
+    background-color: $gray-400;
+  }
+}
+
+.highlight {
+  background-image: url('../img/highlight_bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 75vh;
+
+  .go-now {
+    border: 1px solid #444;
+    bottom: -15px;
+    z-index: 1;
+  }
+}
+
+.tournaments {
+  .tournaments-text {
+    width: 96vw;
+    top: 45px !important;
+  }
+  
+  .feat-tournament {
+    z-index: 1;
+
+    .feat-tournament_text {
+      top: -25px;
+      left: 84px;
+    }
+
+    .feat-tournament_bg {
+      &::before {
+        content: "";
+        background-image: url('../img/feat-tournament_bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: .2;
+      }
+    }
+  }
+}
+
+.latest-news {
+  .latest-news_text {
+    top: -46px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  .news-text {
+    top: -80px;
+    left: 0;
+    z-index: 1;
+
+    img {
+      width: 107%;
+    }
+  }
+
+  .spotlight-news {
+    .group-text {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      margin-left: 138px;
+      transform-origin: 0 0;
+      transform: rotate(90deg);
+
+      .featured-text {
+        color: #772BCB;
+      }
+  
+      .articles-text {
+        color: $dark;
+        text-shadow:
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+         1px 1px 0 #fff;
+         margin-top: -10px;
+      }
+    }
+
+    .featured-articles {
+      background-color: #772BCB;
+
+      .featured-articles_main {
+        .desc {
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 0;
+            background-image: linear-gradient(0deg, rgba(7,7,7,1), rgba(7,7,7,0));
+            width: 100%;
+            height: 50px;
+          }
+        }
+      }
+
+      .featured-articles_list {
+        height: 414px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+
+}
+
+.card {
+  background-color: inherit;
+}
+
+.play-games {
+  background-image: url('../img/pattern_bg.png');
+  background-size: cover;
+  background-position: center center;
+  height: 75vh;
+}
+
+.feat-games {
+  .card {
+    background-color: $white;
+    color: #1d1d1d;
+    border-radius: 24px;
+
+    .card-img-top {
+      border-top-right-radius: 24px;
+      border-top-left-radius: 24px;
+    }
+  }
+}
+
+.faq {
+  background-color: #1d1d1d;
+
+  .accordion {
+    .accordion-item,
+    .accordion-button {
+      border: 1px solid rgba(161, 104, 223, .15);
+      background-color: #303030;
+    }
+
+    .accordion-button {
+      &:not(.collapsed) {
+        color: inherit;
+        background: rgb(161, 104, 223);
+        color: #e8e8e8;
+      }
+
+      &:focus {
+        box-shadow: inherit;
+      }
+    }
+  }
+}
+
+h2 {font-size: 60px;}
+
+.fill-div {
+  text-indent: -9999px;
+
+  &:hover {
+    background-color: #000;
+    opacity: .2;
+  }
+}
+
+footer {
+  font-size: 14px;
 }

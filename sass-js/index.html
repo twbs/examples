@@ -3,69 +3,563 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dynasty</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Bootstrap Sass &amp; JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
+    <!--------- Header --------->
+    <header class="py-2 bg-dark sticky-top">
+      <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
 
-      <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
-        <h1 class="h4">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <img class="d-inline-block me-2" width="40" height="32" src="https://raw.githubusercontent.com/twbs/bootstrap/main/site/static/docs/5.2/assets/brand/bootstrap-logo-black.svg" alt="Bootstrap">
-            <span>Sass &amp; JS</span>
-          </a>
-        </h1>
-        <a href="https://github.com/twbs/examples/tree/main/sass-js/" target="_blank" rel="noopener">View on GitHub</a>
-      </header>
+          <div class="d-flex align-items-center">
+            <a href="/" class="d-flex mb-2 mb-lg-0 me-3 ms-5 text-white text-decoration-none">
+              <img src="img/logo.svg" />
+            </a>
+    
+            <ul class="nav col-12 mb-2 mb-md-0">
+              <li><a href="#" class="nav-link px-3 text-white">Content</a></li>
+              <li><a href="#" class="nav-link px-3 text-white">Play</a></li>
+              <li><a href="#" class="nav-link px-3 text-white">Shop</a></li>
+            </ul>
+          </div>
 
-      <h1>Get started with Bootstrap</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-4">You've successfully loaded up a Bootstrap example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a> and tooling for compiling our Sass and JavaScript to your needs.</p>
-        <p>If this button appears blue and the link appears purple, you've done it!</p>
+          <div class="d-flex col-12 col-md-auto justify-content-center dy-search position-relative">
+            <form role="search">
+              <input type="search" class="form-control form-control-dark rounded-pill mt-1" placeholder="Search game, tournament, articles..." aria-label="Search">
+            </form>
+
+            <div class="position-absolute drag-vertical start-50 translate-middle-x text-center">
+              <img src="img/drag-vertical.png" />
+            </div>
+          </div>
+
+          <div class="col-md-3 text-end">
+            <a href="#" class="nav-link me-5 link-primary">Login / Sign up</a>
+          </div>
+        </div>
       </div>
 
-      <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
-      <a href="#" class="text-success">Example link</a>
+    </header>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    <!--------- Highlight --------->
+    <div class="highlight position-relative">
+      <div class="container d-flex align-items-center justify-content-start h-100 px-5">
+          <div class="col-5">
+            <h1 class="display-3 fw-semibold lh-1 mb-3 text-white">Homepage CTA banner title</h1>
+            <p class="fs-5 fw-semiboldn mb-5 text-gray pe-5">Tincidunt velit turpis mus egestas nisl sed. Lectus tincidunt nec praesent placerat pellentesque. Pharetra adipiscing iaculis semper aliquet mi, etiam.</p>
+            <div class="d-block">
+              <a type="button" role="button" class="btn btn-outline-primary fw-semibold rounded-2 px-5 mb-3">Create tournament</a>
+            </div>
+            <small class="text-white">Dolor elementum commodo lorem aenean dictum.</small>
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </div>
+
+      <div class="go-now position-absolute start-50 translate-middle-x rounded-circle bg-dark py-1 px-2">
+        <a href="#tournaments" class="text-white">
+          <i class="bi bi-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+
+    <!--------- Tournaments --------->
+    <div id="tournaments" class="tournaments position-relative overflow-hidden text-white py-5 bg-dark">
+      
+      <div class="tournaments-text position-absolute start-50 translate-middle">
+        <img src="img/tournaments-text.png" class="w-100" />
+      </div>
+
+      <div class="container feat-tournament position-relative mb-5">
+        <div class="row">
+          <div class="col-7 feat-tournament_bg position-relative pt-3 pb-5 px-5">
+            <h2 class="fw-semibold position-absolute feat-tournament_text">Tournaments</h2>
+            <img src="img/feat-tournament_img.png" class="w-100" />
+          </div>
+
+          <div class="col-4 offset-1">
+            <div class="d-flex align-items-center justify-content-start h-100">
+              <div class="">
+                <h3 class="h1 fw-semibold"><a href="#" class="text-decoration-none text-white">CS:GO Chapter 2 - Monthly Ladder</a></h3>
+                <p class="fs-4 mb-3">End Monday, December 11, 15:00  •  Elimination</p>
+                <a href="#" class="d-flex align-items-center text-decoration-none text-white">
+                  <img src="img/avatar.png" alt="" width="24" height="24" class="rounded-circle me-3">
+                  <span class="fs-4 text-gray">Uploaded by jagong_gong</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- Featured tournament --------->
+      <div class="container feat-card px-5 mb-5">
+        <div class="d-flex justify-content-md-between mb-4">
+          <h3 class="h1 fw-semibold">Featured tournament</h3>
+          <a type="button" type="button" class="btn btn-outline-primary fw-semibold rounded-2 mb-3">View more</a>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-01.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-01.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">Single elimination • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-02.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-02.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">Single elimination • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-03.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-03.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">Single elimination • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-04.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-04.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">Single elimination • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--------- Featured seasons --------->
+      <div class="container feat-card px-5 mb-5">
+        <div class="d-flex justify-content-md-between mb-4">
+          <h3 class="h1 fw-semibold">Featured seasons</h3>
+          <a type="button" type="button" class="btn btn-outline-primary fw-semibold rounded-2 mb-3">View more</a>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-05.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-01.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">40 players • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                    <div class="progress mt-2" style="height: 8px;">
+                      <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-06.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-02.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">40 players • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                    <div class="progress mt-2" style="height: 8px;">
+                      <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-07.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-03.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">40 players • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                    <div class="progress mt-2" style="height: 8px;">
+                      <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card">
+              <img src="img/featured-08.png" class="card-img-top" />
+              <div class="card-body px-0 py-2">
+                <div class="d-flex">
+                  <img src="img/avatar-04.png" width="32" height="32" alt="" class="me-2" />
+                  <div>
+                    <h4 class="fs-6 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Overwatch All-Stars 2021 Championships!!!</a></h4>
+                    <small class="card-text d-block text-gray">40 players • Prize: $400.00</small>
+                    <small class="card-text d-block text-gray">Ends Monday, Dec 11, 15:00</small>
+                    <div class="progress mt-2" style="height: 8px;">
+                      <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--------- Latest News --------->
+    <div class="latest-news text-white py-5 bg-dark">
+
+      <div class="container px-5 mb-5">
+        <div class="position-relative">
+          <h2 class="fw-semibold position-absolute latest-news_text">Latest News</h2>
+          <div class="news-text position-absolute">
+            <img src="img/news-text.png" />
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-4">
+              <div class="card">
+                <img src="img/news-01.png" class="card-img-top rounded-0" />
+                <div class="card-body px-0 py-3">
+                  <h4 class="fs-4 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">What is?: Professional Competition in esports</a></h4>
+                  <p class="fs-5 card-text d-block text-gray">Veronica Brauer  •  August 1, 2021</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-4">
+              <div class="card">
+                <img src="img/news-02.png" class="card-img-top rounded-0" />
+                <div class="card-body px-0 py-3">
+                  <h4 class="fs-4 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Auctor scelerisque tristique neque, in nec</a></h4>
+                  <p class="fs-5 card-text d-block text-gray">Kimberly Vaughn  •  August 1, 2021</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-4">
+              <div class="card">
+                <img src="img/news-03.png" class="card-img-top rounded-0" />
+                <div class="card-body px-0 py-3">
+                  <h4 class="fs-4 fw-semibold card-title lh-base"><a href="#" class="text-decoration-none text-white">Volutpat mauris risus aliquam convallis</a></h4>
+                  <p class="fs-5 card-text d-block text-gray">Sarah Jennings  •  August 1, 2021</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+      <!--------- Spotlight News --------->
+      <div class="container spotlight-news px-5 mb-5">
+        <div class="d-flex justify-content-md-between mb-4">
+          <h3 class="h1 fw-semibold">Spotlight news</h3>
+          <a type="button" type="button" class="btn btn-outline-primary fw-semibold rounded-2 mb-3">View more</a>
+        </div>
+
+        <div class="d-flex">
+          <div class="position-relative" style="width: 138px;">
+            <div class="display-1 fw-bolder text-uppercase group-text">
+              <span class="featured-text d-block lh-1">Featured</span>
+              <span class="articles-text d-block lh-1 bg-dark">Articles</span>
+            </div>
+          </div>
+
+          <div class="container featured-articles">
+            <div class="row">
+              <div class="col-8">
+                <div class="featured-articles_main position-relative my-5 mx-3">
+                  <img src="img/news-04.png" alt="" class="w-100 mb-5 pb-5">
+                  <div class="desc bg-dark position-absolute px-3 py-3 start-0 bottom-0">
+                    <h2 class="fs-2 fw-semibold m-0">The top 15 PlayStation 5 games to play on release</h2>
+                    <p class="fs-5 text-gray m-0">December 16, 2021</p>
+                  </div>
+                  <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+                </div>
+              </div>
+
+              <div class="featured-articles_list col-4 my-5 px-3">
+
+                <div class="d-flex mb-4 position-relative">
+                  <div class="flex-shrink-0">
+                    <img src="img/news-05.png" alt="" class="w-100n" width="150">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="fs-6 fw-semibold">Microsoft just dropped the best controller</h3>
+                    <small class="text-gray">Dec 16, 2020</small>
+                  </div>
+                  <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+                </div>
+
+                <div class="d-flex mb-4 position-relative">
+                  <div class="flex-shrink-0">
+                    <img src="img/news-06.png" alt="" class="w-100n" width="150">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="fs-6 fw-semibold">Twitch surpasses 1.7 billion hours in viewership</h3>
+                    <small class="text-gray">Dec 08, 2020</small>
+                  </div>
+                  <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+                </div>
+
+                <div class="d-flex mb-4 position-relative">
+                  <div class="flex-shrink-0">
+                    <img src="img/news-07.png" alt="" class="w-100n" width="150">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="fs-6 fw-semibold">North Esports announces £3.6m team investment</h3>
+                    <small class="text-gray">Dec 02, 2020</small>
+                  </div>
+                  <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+                </div>
+
+                <div class="d-flex mb-4 position-relative">
+                  <div class="flex-shrink-0">
+                    <img src="img/news-07.png" alt="" class="w-100n" width="150">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="fs-6 fw-semibold">Esports announces £3.6m team investment</h3>
+                    <small class="text-gray">Dec 16, 2020</small>
+                  </div>
+                  <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--------- Play Games Your Way --------->
+    <div class="play-games bg-dark p-5">
+      <div class="container d-flex align-items-center justify-content-start h-100 px-5">
+        <img src="img/play-games.png" class="w-100 p-5" />
+      </div>
+    </div>
+
+    <!--------- Video BG --------->
+    <div class="video-bg bg-dark vh-100">
+      <img src="img/video_bg.jpg" class="w-100" />
+    </div>
+
+    <!--------- About --------->
+    <div class="about text-white py-5 bg-dark position-relative">
+
+      <div class="container px-5 mb-5">
+        <div class="row">
+          <div class="about-text col-9 mb-5 mt-3">
+            <img src="img/about-text.png" class="w-100" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="about-desc col-6 offset-6">
+            <p class="fs-5 mb-5">Tortor, laoreet nunc diam et nullam sed. Vel eu tempus nibh quis. Nulla et congue pellentesque amet, purus. In suspendisse eleifend pellentesque in tellus libero, venenatis viverra. Amet convallis in faucibus ut. Sit elit molestie quam sed vestibulum, magna. Consectetur pulvinar dapibusturpis.</p>
+          </div>
+        </div>
+
+        <div class="feat-games">
+          <h3 class="h1 fw-semibold mb-5">Featured games</h3>
+
+          <div class="row">
+            <div class="col-3">
+              <div class="card position-relative">
+                <img src="img/games-01.jpg" class="card-img-top" />
+
+                <div class="card-body p-0 text-center">
+                  <p class="fs-4 fw-bold mb-0 py-3">Valorant</p>
+                </div>
+                <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card">
+                <img src="img/games-02.jpg" class="card-img-top" />
+
+                <div class="card-body p-0 text-center">
+                  <p class="fs-4 fw-bold mb-0 py-3">League of Legends</p>
+                </div>
+                <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card">
+                <img src="img/games-03.jpg" class="card-img-top" />
+
+                <div class="card-body p-0 text-center">
+                  <p class="fs-4 fw-bold mb-0 py-3">DOTA 2</p>
+                </div>
+                <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card">
+                <img src="img/games-04.jpg" class="card-img-top" />
+
+                <div class="card-body p-0 text-center">
+                  <p class="fs-4 fw-bold mb-0 py-3">CS:GO</p>
+                </div>
+                <a href="#" class="fill-div position-absolute start-0 top-0 w-100 h-100 overflow-hidden">My link</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--------- FAQ --------->
+    <div class="faq text-white py-5">
+      <div class="container">
+        <h2 class="fs-4 fw-semibold text-center mb-5">Frequently asked questions</h2>
+
+        <div class="row">
+          <div class="col-6 offset-3">
+
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+              <div class="accordion-item text-white rounded-2">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed rounded-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    FAQ Question 1
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+              <div class="accordion-item text-white rounded-2">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed rounded-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    FAQ Question 2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+              <div class="accordion-item text-white rounded-2">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed rounded-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    FAQ Question 3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+              <div class="accordion-item text-white rounded-2">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed rounded-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFoyr">
+                    FAQ Question 4
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center mb-0"><a href="#" class="text-decoration-none">Not sure of anything? Contact the support team.</a></p>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-gray py-5">
+
+      <div class="container px-5">
+        <div class="d-flex justify-content-md-between">
+          <div>
+            <div class="d-block text-white">
+              Copyright © 2022. All Rights Reserved
+            </div>
+            <div class="d-block">
+              <a href="#" class="text-decoration-none me-2">Home</a>  •  <a href="#" class="text-decoration-none mx-2">Play</a>  •  <a href="#" class="text-decoration-none mx-2">Content</a>  •  <a href="#" class="text-decoration-none mx-2">Shop</a>  <span class="me-2">|</span>  <a href="#" class="text-gray text-decoration-none me-2">Privacy policy</a>  •   <a href="#" class="text-gray text-decoration-none mx-2">Terms & conditions</a>
+            </div>
+          </div>
+  
+          <div class="d-flex align-items-center">
+            Follow us on social media
+            <ul class="list-unstyled list-inline d-inline-block ms-4 p-0 my-0">
+              <li class="list-inline-item me-3"><a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="list-inline-item me-3"><a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="list-inline-item me-3"><a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="list-inline-item me-3"><a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
-
-      <hr class="col-1 my-5 mx-0">
-
-      <h2>Guides</h2>
-      <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-      <ul class="icon-list">
-        <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap quick start guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.2/getting-started/vite/">Bootstrap Vite guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.2/getting-started/build-tools/">Contributing to Bootstrap</a></li>
-      </ul>
-
-      <hr class="mt-5 mb-4">
-
-      <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
-    </div>
+    </footer>
 
     <script type="module" src="js/main.js"></script>
   </body>
