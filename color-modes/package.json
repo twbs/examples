@@ -1,0 +1,35 @@
+{
+  "name": "sass-js",
+  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
+  "version": "0.0.0",
+  "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "scripts": {
+    "build": "npm run css",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
+    "css": "npm-run-all css-compile css-prefix",
+    "server": "serve --listen 3000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "test": "npm-run-all css-lint css"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "git://github.com/twbs/bootstrap.git#d9f8be677325d8060253dd25716764f37dcbd343"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "nodemon": "^2.0.19",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.56.1",
+    "serve": "^14.1.2",
+    "stylelint": "^14.11.0",
+    "stylelint-config-twbs-bootstrap": "^7.0.0"
+  }
+}
