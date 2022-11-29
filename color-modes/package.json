@@ -1,6 +1,6 @@
 {
-  "name": "sass-js",
-  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
+  "name": "color-modes",
+  "description": "Include Bootstrap's source Sass, JavaScript plugins, and color mode functionality via npm.",
   "version": "0.0.0",
   "private": true,
   "stackblitz": {
