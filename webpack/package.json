@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack -w"
+    "build": "webpack build"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
