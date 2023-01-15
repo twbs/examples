@@ -17,7 +17,7 @@
 - [Starter](starter/) – CDN links for our CSS and JS
 - [Sass & JS](sass-js/) — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm
 - [Sass & ESM JS](sass-js-esm/) — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim
-- [Color modes](starter/) – New example for the Bootstrap v5.3.0 pre-release built on our Sass & ESM JS example. Also includes color mode support and color mode picker.
+- [Color modes](color-modes/) – New example for the Bootstrap v5.3.0 pre-release built on our Sass & ESM JS example. Also includes color mode support and color mode picker.
 - PurgeCSS - import sass w/ purgecss and js via npm
 - [Webpack](webpack/) - Import and bundle Sass and JS with Webpack
 - [Parcel](parcel/) - Sass, JS via Parcel
