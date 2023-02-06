@@ -18,12 +18,12 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.1",
+    "@vitejs/plugin-vue": "^4.0.0",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^9.0.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
-    "vite": "^3.0.1",
+    "vite": "^4.1.1",
     "vue-loader": "^17.0.0"
   }
 }
