@@ -9,7 +9,7 @@
 <p align="center">
   Functional examples for building with Bootstrap using popular tools and frameworks.
   <br>
-  <a href="https://getbootstrap.com/docs/5.2/"><strong>Explore Bootstrap docs »</strong></a>
+  <a href="https://getbootstrap.com/docs/5.3/"><strong>Explore Bootstrap docs »</strong></a>
 </p>
 
 ## Directory
