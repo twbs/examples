@@ -5,17 +5,17 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -23,10 +23,10 @@ updates:
     directory: "/color-modes/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -34,10 +34,10 @@ updates:
     directory: "/icons-font"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -45,10 +45,10 @@ updates:
     directory: "/parcel/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -56,10 +56,10 @@ updates:
     directory: "/sass-js-esm/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -67,10 +67,10 @@ updates:
     directory: "/sass-js/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -78,10 +78,10 @@ updates:
     directory: "/starter/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -89,10 +89,10 @@ updates:
     directory: "/vite/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -100,10 +100,10 @@ updates:
     directory: "/vue/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
@@ -111,10 +111,10 @@ updates:
     directory: "/webpack/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: "tuesday"
       time: 12:00
       timezone: Europe/Athens
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
