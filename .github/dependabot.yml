@@ -1,23 +1,79 @@
+---
 version: 2
 updates:
-  - package-ecosystem: npm
+  - package-ecosystem: github-actions
     directory: "/"
-    schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
-    open-pull-requests-limit: 10
-    reviewers:
-      - XhmikosR
     labels:
       - dependencies
-    versioning-strategy: increase
-    rebase-strategy: disabled
-  - package-ecosystem: "github-actions"
-    directory: "/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
+  - package-ecosystem: npm
+    directory: "/"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/color-modes"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/icons-font"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/parcel"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/sass-js-esm"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/sass-js"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/starter"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/vite"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/vue"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/webpack"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase

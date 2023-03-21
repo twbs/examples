@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "sass": "^1.54.8",
+    "sass": "^1.59.3",
     "vite": "^4.1.1"
   },
   "dependencies": {
