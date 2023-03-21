@@ -83,7 +83,7 @@ updates:
     directory: "/webpack/"
     schedule:
       interval: monthly
-      open-pull-requests-limit: 5
+    open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
