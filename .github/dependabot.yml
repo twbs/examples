@@ -15,63 +15,63 @@ updates:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/color-modes/"
+    directory: "/color-modes"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/icons-font/"
+    directory: "/icons-font"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/parcel/"
+    directory: "/parcel"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/sass-js-esm/"
+    directory: "/sass-js-esm"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/sass-js/"
+    directory: "/sass-js"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/starter/"
+    directory: "/starter"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/vite/"
+    directory: "/vite"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/vue/"
+    directory: "/vue"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/webpack/"
+    directory: "/webpack"
     labels:
       - dependencies
     schedule:
