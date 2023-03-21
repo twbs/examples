@@ -23,7 +23,7 @@
     "eslint-plugin-vue": "^9.0.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
-    "vite": "^4.1.1",
+    "vite": "^4.2.1",
     "vue-loader": "^17.0.0"
   }
 }
