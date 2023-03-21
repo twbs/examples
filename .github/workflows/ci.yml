@@ -1,12 +1,9 @@
-name: CI (icons-font)
+name: CI
 
 on:
   push:
-    paths:
-      - ".github/workflows/**"
-      - "icons-font/**"
-    branches-ignore:
-      - "dependabot/**"
+    branches:
+      - main
   pull_request:
   workflow_dispatch:
 
@@ -19,10 +16,25 @@ permissions:
 
 jobs:
   ci:
+    name: ${{ matrix.folders }}
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: "icons-font"
+        working-directory: "${{ matrix.folders }}"
+
+    strategy:
+      fail-fast: false
+      matrix:
+        folders:
+          - "color-modes"
+          - "icons-font"
+          - "parcel"
+          - "sass-js"
+          - "sass-js-esm"
+          - "starter"
+          - "vite"
+          - "vue"
+          - "webpack"
 
     steps:
       - name: Clone repository
