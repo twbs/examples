@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/index.html --public-url / --dist-dir dist",
+    "test": "npm run build"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
