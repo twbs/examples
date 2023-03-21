@@ -1,5 +1,5 @@
 <script setup>
-import GuideItem from './GuideItem.vue'
+import GuideItem from './AppGuideItem.vue'
 </script>
 
 <script>

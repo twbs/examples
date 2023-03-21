@@ -1,7 +1,7 @@
 <script setup>
-import Header from '../components/app-header.vue'
-import Guides from '../components/app-guides.vue'
-import Footer from '../components/app-footer.vue'
+import Header from '../components/AppHeader.vue'
+import Guides from '../components/AppGuides.vue'
+import Footer from '../components/AppFooter.vue'
 </script>
 
 <template>
