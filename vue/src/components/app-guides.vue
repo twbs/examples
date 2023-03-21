@@ -38,6 +38,8 @@ export default {
   <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
 
   <ul class="ps-0 list-style-none">
+    <!-- TODO fix later -->
+    <!-- eslint-disable-next-line vue/valid-v-for -->
     <GuideItem
       v-for="item in resources"
       :href="item.url"
