@@ -28,7 +28,7 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "sass": "^1.57.1",
-    "serve": "^14.1.2",
+    "serve": "^14.2.0",
     "stylelint": "^14.16.1",
     "stylelint-config-twbs-bootstrap": "^7.0.0"
   }
