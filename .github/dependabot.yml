@@ -5,15 +5,15 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -23,8 +23,8 @@ updates:
     directory: "/color-modes/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -34,8 +34,8 @@ updates:
     directory: "/icons-font"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -45,8 +45,8 @@ updates:
     directory: "/parcel/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -56,8 +56,8 @@ updates:
     directory: "/sass-js-esm/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -67,8 +67,8 @@ updates:
     directory: "/sass-js/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -78,8 +78,8 @@ updates:
     directory: "/starter/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -89,8 +89,8 @@ updates:
     directory: "/vite/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -100,8 +100,8 @@ updates:
     directory: "/vue/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
@@ -111,8 +111,8 @@ updates:
     directory: "/webpack/"
     schedule:
       interval: weekly
-      day: "tuesday"
-      time: 12:00
+      day: tuesday
+      time: "12:00"
       timezone: Europe/Athens
     open-pull-requests-limit: 5
     labels:
