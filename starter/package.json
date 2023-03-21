@@ -10,6 +10,6 @@
     "start": "serve --listen 3000"
   },
   "dependencies": {
-    "serve": "^14.1.2"
+    "serve": "^14.2.0"
   }
 }
