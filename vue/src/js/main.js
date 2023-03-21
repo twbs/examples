@@ -1,4 +1,3 @@
-
 import { createApp } from 'vue'
 import App from './App.vue'
 
@@ -6,7 +5,7 @@ import App from './App.vue'
 import '../scss/styles.scss'
 
 // Import only the Bootstrap components we need
-import { Dropdown, Offcanvas, Popover } from 'bootstrap';
+import { Popover } from 'bootstrap';
 
 createApp(App).mount('#app')
 
