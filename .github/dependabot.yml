@@ -3,18 +3,14 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
+    labels:
+      - dependencies
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -22,10 +18,7 @@ updates:
   - package-ecosystem: npm
     directory: "/color-modes/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -33,10 +26,7 @@ updates:
   - package-ecosystem: npm
     directory: "/icons-font"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -44,10 +34,7 @@ updates:
   - package-ecosystem: npm
     directory: "/parcel/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -55,10 +42,7 @@ updates:
   - package-ecosystem: npm
     directory: "/sass-js-esm/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -66,10 +50,7 @@ updates:
   - package-ecosystem: npm
     directory: "/sass-js/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -77,10 +58,7 @@ updates:
   - package-ecosystem: npm
     directory: "/starter/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -88,10 +66,7 @@ updates:
   - package-ecosystem: npm
     directory: "/vite/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -99,10 +74,7 @@ updates:
   - package-ecosystem: npm
     directory: "/vue/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
+      interval: monthly
     open-pull-requests-limit: 5
     labels:
       - dependencies
@@ -110,11 +82,8 @@ updates:
   - package-ecosystem: npm
     directory: "/webpack/"
     schedule:
-      interval: weekly
-      day: tuesday
-      time: "12:00"
-      timezone: Europe/Athens
-    open-pull-requests-limit: 5
+      interval: monthly
+      open-pull-requests-limit: 5
     labels:
       - dependencies
     versioning-strategy: increase
