@@ -11,7 +11,7 @@
   "scripts": {
     "start": "serve --listen 3000"
   },
-  "dependencies": {
+  "devDependencies": {
     "serve": "^14.2.0"
   }
 }
