@@ -4,5 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "repository": "twbs/examples",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
 }

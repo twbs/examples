@@ -18,9 +18,6 @@ jobs:
   ci:
     name: ${{ matrix.project }}
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: "${{ matrix.project }}"
 
     strategy:
       fail-fast: false
@@ -48,10 +45,9 @@ jobs:
         with:
           node-version: "${{ env.NODE }}"
           cache: npm
-          cache-dependency-path: "**/package-lock.json"
 
       - name: Install npm dependencies
         run: npm ci
 
       - name: Build and test
-        run: npm run test --if-present
+        run: npm run test --if-present --workspace=${{ matrix.project }}

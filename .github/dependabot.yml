@@ -15,70 +15,70 @@ updates:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/color-modes"
+    directory: "/packages/color-modes"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/icons-font"
+    directory: "/packages/icons-font"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/parcel"
+    directory: "/packages/parcel"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/react-nextjs"
+    directory: "/packages/react-nextjs"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/sass-js-esm"
+    directory: "/packages/sass-js-esm"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/sass-js"
+    directory: "/packages/sass-js"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/starter"
+    directory: "/packages/starter"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/vite"
+    directory: "/packages/vite"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/vue"
+    directory: "/packages/vue"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
-    directory: "/webpack"
+    directory: "/packages/webpack"
     labels:
       - dependencies
     schedule:
