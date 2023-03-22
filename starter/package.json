@@ -9,9 +9,9 @@
     "startCommand": "npm start"
   },
   "scripts": {
-    "start": "serve --listen 3000"
+    "start": "sirv --dev --port 3000"
   },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "sirv-cli": "^2.0.2"
   }
 }
