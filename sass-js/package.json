@@ -14,7 +14,7 @@
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix",
-    "server": "sirv --dev --port 3000",
+    "server": "sirv --dev --no-clear --port 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm-run-all css-lint css"
