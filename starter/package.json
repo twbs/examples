@@ -3,13 +3,15 @@
   "description": "Include Bootstrap CSS and JS via the jsDelivr CDN.",
   "version": "0.0.0",
   "private": true,
+  "repository": "twbs/examples",
+  "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"
   },
   "scripts": {
-    "start": "serve --listen 3000"
+    "start": "sirv --dev --port 3000"
   },
-  "dependencies": {
-    "serve": "^14.2.0"
+  "devDependencies": {
+    "sirv-cli": "^2.0.2"
   }
 }

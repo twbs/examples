@@ -3,6 +3,8 @@
   "description": "Include Bootstrap Icons font files with Sass and npm.",
   "version": "0.0.0",
   "private": true,
+  "repository": "twbs/examples",
+  "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"
   },
@@ -13,7 +15,7 @@
     "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css css/styles.css --content index.html --output css/",
     "css": "npm-run-all css-compile css-prefix css-purge",
-    "server": "serve --listen 3000",
+    "server": "sirv --dev --port 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm-run-all css-lint css"
@@ -30,7 +32,7 @@
     "postcss-cli": "^10.1.0",
     "purgecss": "^5.0.0",
     "sass": "^1.59.3",
-    "serve": "^14.2.0",
+    "sirv-cli": "^2.0.2",
     "stylelint": "^14.16.1",
     "stylelint-config-twbs-bootstrap": "^7.0.0"
   }
