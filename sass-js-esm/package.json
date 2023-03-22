@@ -1,5 +1,5 @@
 {
-  "name": "sass-js",
+  "name": "sass-js-esm",
   "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
   "version": "0.0.0",
   "private": true,
