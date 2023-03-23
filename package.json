@@ -1,8 +1,8 @@
 {
   "name": "bootstrap-examples",
+  "description": "Functional examples for building with Bootstrap using popular tools and frameworks.",
   "version": "0.0.0",
   "private": true,
   "repository": "twbs/examples",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }
