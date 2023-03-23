@@ -16,16 +16,16 @@ permissions:
 
 jobs:
   ci:
-    name: ${{ matrix.folders }}
+    name: ${{ matrix.project }}
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: "${{ matrix.folders }}"
+        working-directory: "${{ matrix.project }}"
 
     strategy:
       fail-fast: false
       matrix:
-        folders:
+        project:
           - "color-modes"
           - "icons-font"
           - "parcel"
