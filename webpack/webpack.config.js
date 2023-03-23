@@ -37,11 +37,9 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: function () {
-                  return [
-                    autoprefixer
-                  ];
-                }
+                plugins: () => [
+                  autoprefixer
+                ]
               }
             }
           },
