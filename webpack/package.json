@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack build",
+    "build": "webpack build --mode=production",
     "test": "npm run build"
   },
   "dependencies": {
