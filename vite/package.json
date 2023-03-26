@@ -14,11 +14,11 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
+    "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3"
   },
   "devDependencies": {
-    "sass": "^1.59.3",
+    "sass": "^1.60.0",
     "vite": "^4.2.1"
   }
 }
