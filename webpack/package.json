@@ -14,7 +14,7 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
+    "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3"
   },
   "devDependencies": {
@@ -22,10 +22,10 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "postcss-loader": "^7.1.0",
-    "sass": "^1.59.3",
+    "sass": "^1.60.0",
     "sass-loader": "^13.2.1",
     "style-loader": "^3.3.2",
-    "webpack": "^5.76.2",
+    "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   }
