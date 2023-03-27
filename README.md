@@ -24,7 +24,7 @@
 - [Vue](vue/) - Sass, JS via Vue/Vite
 - [Webpack](webpack/) - Import and bundle Sass and JS with Webpack
 - PurgeCSS - import sass w/ purgecss and js via npm
-- React - react-bootstrap?
+- [React](react-nextjs/) - Sass with React Bootstrap components using React and Next.js
 
 ## License
 
