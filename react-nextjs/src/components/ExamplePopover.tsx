@@ -10,7 +10,7 @@ const ExamplePopover: React.FC = () => {
       overlay={
         <Popover>
           <Popover.Header as="h3">Custom popover</Popover.Header>
-          <Popover.Body>This is a Bootstrap popover."</Popover.Body>
+          <Popover.Body>This is a Bootstrap popover.</Popover.Body>
         </Popover>
       }
     >
