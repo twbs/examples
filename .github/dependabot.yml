@@ -36,6 +36,13 @@ updates:
       interval: monthly
     versioning-strategy: increase
   - package-ecosystem: npm
+    directory: "/react-nextjs"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
     directory: "/sass-js-esm"
     labels:
       - dependencies
