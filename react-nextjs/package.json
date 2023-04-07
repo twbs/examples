@@ -16,10 +16,10 @@
   },
   "dependencies": {
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.31",
+    "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "bootstrap": "^5.2.3",
-    "next": "^13.2.4",
+    "next": "^13.3.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "eslint": "^8.37.0",
-    "eslint-config-next": "^13.2.4",
-    "sass": "^1.60.0"
+    "eslint-config-next": "^13.3.0",
+    "sass": "^1.61.0"
   }
 }
