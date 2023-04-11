@@ -32,6 +32,6 @@
     "sass": "^1.61.0",
     "sirv-cli": "^2.0.2",
     "stylelint": "^15.4.0",
-    "stylelint-config-twbs-bootstrap": "^8.0.0"
+    "stylelint-config-twbs-bootstrap": "^9.0.1"
   }
 }
