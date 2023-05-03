@@ -18,12 +18,13 @@
 - [Sass & JS](sass-js/) — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm
 - [Sass & ESM JS](sass-js-esm/) — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim
 - [Color modes](color-modes/) – New example for the Bootstrap v5.3.0 pre-release built on our Sass & ESM JS example. Also includes color mode support and color mode picker.
-- PurgeCSS - import sass w/ purgecss and js via npm
-- [Webpack](webpack/) - Import and bundle Sass and JS with Webpack
-- [Parcel](parcel/) - Sass, JS via Parcel
-- [Vite](vite/) - Sass, JS via Vite
-- React - react-bootstrap?
 - [Bootstrap Icons font](icons-font/) - Import and compile Sass, Stylelint, PurgeCSS, and our icon font
+- [Parcel](parcel/) - Sass, JS via Parcel
+- [React](react-nextjs/) - Sass with React Bootstrap components using React and Next.js
+- [Vite](vite/) - Sass, JS via Vite
+- [Vue](vue/) - Sass, JS via Vue/Vite
+- [Webpack](webpack/) - Import and bundle Sass and JS with Webpack
+- PurgeCSS - import sass w/ purgecss and js via npm
 
 ## License
 

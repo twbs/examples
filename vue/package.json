@@ -9,8 +9,7 @@
     "startCommand": "npm start"
   },
   "scripts": {
-    "start": "npm run dev",
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
@@ -18,17 +17,17 @@
     "test": "npm run build && npm run lint"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
+    "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.1.0",
-    "eslint": "^8.36.0",
-    "eslint-plugin-vue": "^9.10.0",
-    "sass": "^1.59.3",
-    "sass-loader": "^13.2.1",
-    "vite": "^4.2.1",
-    "vue-loader": "^17.0.1"
+    "@vitejs/plugin-vue": "^4.2.1",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "vite": "^4.3.3",
+    "vue-loader": "^17.1.0"
   }
 }
