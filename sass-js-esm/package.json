@@ -20,7 +20,7 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.7",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.2.3"
   },
   "devDependencies": {
