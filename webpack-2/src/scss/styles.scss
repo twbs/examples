@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -23,14 +22,11 @@
 // Option 2
 //
 
-
 // Bootstrap
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/mixins';
 @import 'variables-override';
 @import '~bootstrap/scss/bootstrap';
-
-
 
 @import "icon-list";
 

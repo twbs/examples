@@ -84,3 +84,10 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/webpack-2"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase

@@ -3,37 +3,37 @@
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Webpack.",
   "version": "0.0.0",
   "private": true,
+  "repository": "twbs/examples",
+  "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"
   },
   "scripts": {
-    "start": "NODE_ENV=development webpack serve",
-    "watch": "NODE_ENV=development webpack -w",
-    "dev": "NODE_ENV=development webpack",
-    "prod": "NODE_ENV=production webpack --progress"
+    "start": "webpack serve",
+    "build": "webpack build --mode=production",
+    "test": "npm run build"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "5.2.0-beta1"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
+    "@babel/core": "^7.22.5",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/preset-env": "^7.16.11",
-    "autoprefixer": "^10.4.7",
-    "babel-loader": "^8.2.3",
+    "@babel/preset-env": "^7.22.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^8.3.0",
     "babel-plugin-dynamic-import-webpack": "^1.1.0",
     "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.7.1",
+    "css-loader": "^6.8.1",
     "export-loader": "^1.0.52",
-    "mini-css-extract-plugin": "^2.6.0",
-    "path": "^0.12.7",
+    "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^6.2.1",
-    "sass": "^1.51.0",
+    "sass": "^1.63.4",
     "sass-loader": "^12.6.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "style-loader": "^3.3.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1"
   }
 }
