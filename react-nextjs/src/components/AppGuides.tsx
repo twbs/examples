@@ -1,4 +1,4 @@
-const TWBS_DOCS_URL = "https://getbootstrap.com/docs/5.2";
+const TWBS_DOCS_URL = "https://getbootstrap.com/docs/5.3";
 
 const GUIDES = [
   {
