@@ -5,7 +5,7 @@
 // you import Bootstrap's source Sass files.
 //
 // Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
+// CSS without writing _new_ styles. For example, you can either change
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
@@ -41,6 +41,7 @@ $success: #7952b3;
 
 // Required
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
@@ -71,7 +72,7 @@ $success: #7952b3;
 // @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
-// @import "bootstrap/scss/popover";
+@import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
