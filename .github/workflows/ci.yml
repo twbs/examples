@@ -36,6 +36,7 @@ jobs:
           - "vite"
           - "vue"
           - "webpack"
+          - "webpack-2"
 
     steps:
       - name: Clone repository
