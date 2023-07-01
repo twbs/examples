@@ -28,6 +28,6 @@
   "devDependencies": {
     "eslint": "^8.42.0",
     "eslint-config-next": "^13.3.2",
-    "sass": "^1.62.1"
+    "sass": "^1.63.6"
   }
 }
