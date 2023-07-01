@@ -22,7 +22,7 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.1",
     "postcss-loader": "^7.3.0",
-    "sass": "^1.62.1",
+    "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "webpack": "^5.81.0",
