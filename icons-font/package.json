@@ -33,7 +33,7 @@
     "purgecss": "^5.0.0",
     "sass": "^1.62.1",
     "sirv-cli": "^2.0.2",
-    "stylelint": "^15.6.0",
+    "stylelint": "^15.9.0",
     "stylelint-config-twbs-bootstrap": "^10.0.0"
   }
 }
