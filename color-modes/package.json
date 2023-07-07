@@ -31,7 +31,7 @@
     "postcss-cli": "^10.1.0",
     "sass": "^1.62.1",
     "sirv-cli": "^2.0.2",
-    "stylelint": "^15.6.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-twbs-bootstrap": "^10.0.0"
   }
 }
