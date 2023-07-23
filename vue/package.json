@@ -24,7 +24,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "eslint": "^8.42.0",
-    "eslint-plugin-vue": "^9.11.0",
+    "eslint-plugin-vue": "^9.15.1",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.2",
     "vite": "^4.3.9",
