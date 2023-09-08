@@ -24,7 +24,7 @@ export default {
           title: 'Bootstrap Vite guide'
         },
         { 
-          url: 'https://getbootstrap.com/docs/5.3/getting-started/build-tools/',
+          url: 'https://getbootstrap.com/docs/5.3/getting-started/contribute/',
           title: 'Contributing to Bootstrap'
         },
       ]
