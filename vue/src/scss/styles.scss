@@ -30,6 +30,9 @@ $enable-shadows: true;
 
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
+// Include functions first
+@import "bootstrap/scss/functions";
+
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
@@ -37,7 +40,6 @@ $border-radius: .4rem;
 $success: #7952b3;
 
 // Required
-@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
