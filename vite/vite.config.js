@@ -1,7 +1,7 @@
-const path = require('path')
+import { resolve } from 'path'
 
 export default {
-  root: path.resolve(__dirname, 'src'),
+  root: resolve(__dirname, 'src'),
   build: {
     outDir: '../dist'
   },
