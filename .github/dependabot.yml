@@ -7,6 +7,11 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/"
     labels:
@@ -14,6 +19,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/color-modes"
     labels:
@@ -21,6 +31,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/icons-font"
     labels:
@@ -28,6 +43,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/parcel"
     labels:
@@ -35,6 +55,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/react-nextjs"
     labels:
@@ -42,6 +67,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/sass-js-esm"
     labels:
@@ -49,6 +79,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/sass-js"
     labels:
@@ -56,6 +91,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/starter"
     labels:
@@ -63,6 +103,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/vite"
     labels:
@@ -70,6 +115,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/vue"
     labels:
@@ -77,6 +127,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/webpack"
     labels:
@@ -84,3 +139,8 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
