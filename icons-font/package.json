@@ -21,8 +21,8 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0",
-    "bootstrap-icons": "^1.10.5"
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
