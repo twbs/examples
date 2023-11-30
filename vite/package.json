@@ -18,7 +18,7 @@
     "bootstrap": "^5.3.2"
   },
   "devDependencies": {
-    "sass": "^1.64.1",
+    "sass": "^1.69.5",
     "vite": "^4.4.7"
   }
 }
