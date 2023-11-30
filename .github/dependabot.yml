@@ -7,11 +7,6 @@ updates:
       - dependencies
     schedule:
       interval: monthly
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
   - package-ecosystem: npm
     directory: "/"
     labels:
