@@ -1,10 +1,9 @@
 {
   "name": "vite",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "repository": "twbs/examples",
-  "type": "module",
   "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"
