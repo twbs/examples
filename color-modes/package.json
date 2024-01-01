@@ -25,13 +25,13 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.0.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
-    "sass": "^1.69.5",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.69.6",
     "sirv-cli": "^2.0.2",
-    "stylelint": "^15.11.0",
-    "stylelint-config-twbs-bootstrap": "^12.0.0"
+    "stylelint": "^16.1.0",
+    "stylelint-config-twbs-bootstrap": "^13.0.0"
   }
 }
