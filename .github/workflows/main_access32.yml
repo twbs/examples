@@ -50,4 +50,4 @@ jobs:
           app-name: 'ACCESS32'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CBE3DF8A5BE74417BC7E2ED29CEA5D29 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6162B0BBC5C740B48169A82BEC3D96D8 }}
