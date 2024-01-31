@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         target="_blank"
         rel="noopener"
       >
-        View on GitHub
+        GitHub
       </a>
     </header>
   );
