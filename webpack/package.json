@@ -21,12 +21,12 @@
     "autoprefixer": "^10.4.17",
     "css-loader": "^6.10.0",
     "html-webpack-plugin": "^5.6.0",
-    "postcss-loader": "^8.1.0",
-    "sass": "^1.70.0",
-    "sass-loader": "^14.1.0",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^5.0.2"
   }
 }
