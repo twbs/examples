@@ -26,8 +26,8 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.0",
-    "sass": "^1.70.0"
+    "sass": "^1.71.1"
   }
 }
