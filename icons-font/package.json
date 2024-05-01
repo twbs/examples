@@ -31,9 +31,9 @@
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "purgecss": "^6.0.0",
-    "sass": "^1.72.0",
+    "sass": "^1.76.0",
     "sirv-cli": "^2.0.2",
-    "stylelint": "^16.3.1",
-    "stylelint-config-twbs-bootstrap": "^14.0.0"
+    "stylelint": "^16.4.0",
+    "stylelint-config-twbs-bootstrap": "^14.1.0"
   }
 }
