@@ -22,10 +22,10 @@
     "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.25.0",
-    "sass": "^1.76.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "sass": "^1.77.4",
     "sass-loader": "^14.2.1",
     "vite": "^5.2.7",
     "vue-loader": "^17.4.2"
