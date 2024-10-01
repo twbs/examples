@@ -15,15 +15,15 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@types/node": "^22.5.2",
-    "@types/react": "^18.3.5",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.3.3",
-    "next": "^14.2.10",
+    "next": "^14.2.13",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.4",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.2"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
