@@ -12,6 +12,6 @@
     "start": "sirv --dev --no-clear --port 3000"
   },
   "devDependencies": {
-    "sirv-cli": "^2.0.2"
+    "sirv-cli": "^3.0.0"
   }
 }
