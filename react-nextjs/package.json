@@ -15,19 +15,19 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "bootstrap": "^5.3.5",
-    "next": "^15.2.4",
+    "next": "^15.3.1",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "eslint": "^9.24.0",
-    "eslint-config-next": "^15.2.4",
+    "eslint": "^9.25.0",
+    "eslint-config-next": "^15.3.1",
     "sass": "^1.86.3"
   }
 }
