@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon Site avec Bootstrap 5.3</title>
+    <!-- Chargement de Bootstrap 5 -->
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="js/main.js"></script>
+    <!-- Définition de la taille de l'écran pour l'affichage mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- Barre de navigation: navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo ou nom du site -->
+        <a class="navbar-brand" href="#">Mon Site</a>
+        <!-- Bouton de bascule pour les petits écrans -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-
+          controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenu de la barre de navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Liste des éléments de navigation -->
+          <ul class="navbar-nav">
+            <!-- Élément de navigation actif -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Accueil <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <!-- Autres éléments de navigation -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
