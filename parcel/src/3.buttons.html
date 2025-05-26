@@ -9,11 +9,98 @@
   </head>
   <body>
     <div class="container py-4 px-3 mx-auto">
+      <h2>Mobile first: BP , break point , point de rupture</h2>
+      <em>BP: mobil > xs > sm > md > lg</em>
       <!-- Code minimal -->
-      <button class = "btn" type = "button">base style bouton</button>
+      <h2>Code minimal</h2>
+      <button class="btn" type="button">base style bouton</button>
+      <a href="#" class="btn">base style lien</a>
+      <hr />
+      <h2>Code basique</h2>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-link">Link</button>
+      <hr />
+      <h2>Ghost or Outline Buttons</h2>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+      <hr />
+      <h2>Sizes</h2>
+      <button type="button" class="btn btn-outline-dark btn-lg">
+        Dark outline btn
+      </button>
+      <hr />
+      <h2>CTA</h2>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <p class="d-inline-flex gap-1">
+            <button type="button" class="btn" data-bs-toggle="button">
+              Toggle button
+            </button>
+            <button
+              type="button"
+              class="btn active"
+              data-bs-toggle="button"
+              aria-pressed="true"
+            >
+              Active toggle button
+            </button>
+            <button type="button" class="btn" disabled data-bs-toggle="button">
+              Disabled toggle button
+            </button>
+          </p>
+          <p class="d-inline-flex gap-1">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="button"
+            >
+              Toggle button
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary active"
+              data-bs-toggle="button"
+              aria-pressed="true"
+            >
+              Active toggle button
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              disabled
+              data-bs-toggle="button"
+            >
+              Disabled toggle button
+            </button>
+          </p>
+        </div>
+      </div>
 
-
-
+      <hr>
+      <h2>Operateur logique</h2>
+      <div class="row">
+        <div class="col">
+           <button type="button" class="btn btn-outline-primary ps-4 pe-4">Primary</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

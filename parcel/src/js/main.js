@@ -14,10 +14,10 @@ document.querySelectorAll('[data-bs-toggle="popover"]')
     new Popover(popover)
   });
 
-  document.getElementById("toastbtn").onclick = function() {
-    var toastElList = [].slice.call(document.querySelectorAll('.liveToast'))
-    var toastList = toastElList.map(function(toastEl) {
-      return new bootstrap.Toast(toastEl)
-    })
-    toastList.forEach(toast => toast.show())
-  }
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.liveToast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}

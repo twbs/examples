@@ -1,13 +1,13 @@
-// Override Bootstrap's Sass default variables
+// Remplacer les variables sass par défaut de Bootstrap
 //
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
+// Presque toutes les variables de Bootstrap sont écrites avec le drapeau `!default`.
+// Cela vous permet de remplacer les valeurs par défaut de ces variables avant
+// d'importer les fichiers Sass de Bootstrap.
 //
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
+// Remplacer les valeurs par défaut des variables est la meilleure façon de personnaliser votre
+// CSS sans écrire de _nouveaux_ styles. Par exemple, vous pouvez soit changer
+// `$body-color` ou écrire plus de CSS qui surcharge le CSS de Bootstrap comme ceci :
+// `body { color : red ; }`.
 
 
 
@@ -23,7 +23,9 @@
 
 // Option 2
 //
-// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+// Placez d'abord les variables de substitution, puis importez uniquement les styles dont vous avez besoin. Notez que certaines feuilles de style sont nécessaires quoi qu'il arrive.
+
+@import "./custom-theme";
 
 // Toggle global options
 $enable-gradients: true;
@@ -36,7 +38,7 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // Customize some defaults
 $body-color: #333;
-$body-bg: #fff;
+$body-bg: #efeee8;
 $border-radius: .4rem;
 $success: #7952b3;
 
@@ -86,13 +88,12 @@ $success: #7952b3;
 @import "~/node_modules/bootstrap/scss/utilities/api";
 
 
+
+
+
 //
 // Custom styles
 //
 
 @import "icon-list";
-
-body {
-  padding: 1.5rem;
-}
 

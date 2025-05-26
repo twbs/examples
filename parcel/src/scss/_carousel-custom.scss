@@ -1,0 +1,28 @@
+// Carousel custom
+
+
+
+// * full screen carousel
+
+@media screen and (orientation: landscape) {
+  .carousel__fullscreen img {
+    height: 100dvh;
+    aspect-ratio: auto;
+  }
+}
+ .carousel__fullscreen {
+  height: 100dvh;
+  & .carousel-inner, & .carousel-item{
+    height: 100%;
+  }
+ }
+.item-carousel{
+  background-size: cover;
+  height: 100%;
+}
+//*-----------
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
