@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.5"
+    "bootstrap": "^5.3.6"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.14.4",
-    "parcel": "^2.14.4",
+    "@parcel/transformer-sass": "^2.15.2",
+    "parcel": "^2.15.2",
     "svgo": "^3.3.2"
   }
 }
