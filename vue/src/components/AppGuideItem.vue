@@ -1,8 +1,14 @@
 <script>
 export default {
   props: {
-    href: String,
-    text: String
+    href: {
+      type: String,
+      default: ''
+    },
+    text: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
