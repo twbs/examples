@@ -5,6 +5,7 @@ import * as bootstrap from 'bootstrap';
   // add icons
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+import "./_validateforms";
 
 window.bootstrap = bootstrap;
 
