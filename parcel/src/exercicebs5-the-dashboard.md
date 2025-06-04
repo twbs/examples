@@ -3,15 +3,17 @@
 ## Projet: Dashboard
 
 container fluid
-elements:
+
+elements HTML:
+
 - logo
 - sidebar
 - main
 - search bar
 - une rangé de trois block (mini card)
 - Table DATA:
-   - header
-   - body line
+  - header
+  - body line
 
 - pagination
 - Block 'Best Selling':
@@ -27,7 +29,12 @@ elements:
 ![columns](img/admin-dashboard-bs5.jpg)
 ![tech-spec](img/admin-dashboard-techSpec.jpg)
 
-Happy coding :smile:
+## enoncé
+
+1. créer un nouveau projet Parcel dans VSC.
+2. installer bootstrap 5.
+3. Intégrer le design
+
+Happy coding !
 
 repo: [@b3no1t](https://github.com/b3no1t/examples/tree/main/parcel)
-
