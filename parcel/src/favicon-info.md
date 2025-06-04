@@ -44,8 +44,8 @@ Et le fichier avec le manifeste de l'application Web :
 
 > Generateur de Manifest pour PWA
 > <https://manifest-gen.netlify.app/>
-
-> Si vous avez un site web public, il doit avoir une favicon. Malheureusement, ce que les utilisateurs perçoivent comme une seule icône en est en réalité une multitude .
+> Si vous avez un site web public, il doit avoir une favicon.
+> Malheureusement, ce que les utilisateurs perçoivent comme une seule icône en est en réalité une multitude .
 
 ### La version longue, où tout est expliqué 🚴‍♀️
 
