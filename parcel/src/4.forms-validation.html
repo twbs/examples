@@ -1,47 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap w/ Parcel</title>
-    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="scss/styles.scss" />
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
     <div class="container-md py-4 px-3 mx-auto">
       <form class="needs-validation" novalidate>
+        <!-- ROW -->
         <div class="row g-3">
           <div class="col-md-6">
-            <label for="validationCustom01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="Junior" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+            <label for="validationCustom01" class="form-label"
+              >First name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="Junior"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
           </div>
           <div class="col-md-6">
             <label for="validationCustom02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Dév" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              placeholder="Dév"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
           </div>
         </div>
+        <!-- ROW -->
         <div class="row g-3 mt-3">
           <div class="col-md-6">
             <label for="validationCustom03" class="form-label">Email</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="Your email" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              placeholder="Your email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
           </div>
           <div class="col-md-6">
             <label for="validationCustom04">Choose a city:</label>
             <input
-            list="city-list"
-            id="validationCustom04"
-            name="validationCustom04"
-            class="form-control"
-            pattern="^(Brussels|London|Paris|Madrid|Berlin)$"
+              list="city-list"
+              id="validationCustom04"
+              name="validationCustom04"
+              class="form-control"
+              pattern="^(Brussels|London|Paris|Madrid|Berlin)$"
             />
 
             <datalist id="city-list">
@@ -52,19 +69,18 @@
               <option value="Berlin" data-id="5"></option>
             </datalist>
 
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+            <div class="valid-feedback">Looks good!</div>
           </div>
         </div>
-
+        <!-- ROW -->
         <div class="row g-3 mt-3">
           <div class="col-6 offset-md-6 d-flex justify-content-end gap-3">
-            <button type="submit" class="btn btn-outline-warning btn-lg">Erase</button>
+            <button type="submit" class="btn btn-outline-warning btn-lg">
+              Erase
+            </button>
             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
           </div>
         </div>
-
       </form>
     </div>
   </body>
