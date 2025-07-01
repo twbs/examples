@@ -7,23 +7,23 @@ export default {
   data() {
     return {
       resources: [
-        { 
+        {
           url: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/',
           title: 'Bootstrap quick start guide'
         },
-        { 
+        {
           url: 'https://getbootstrap.com/docs/5.3/getting-started/webpack/',
           title: 'Bootstrap Webpack guide'
         },
-        { 
+        {
           url: 'https://getbootstrap.com/docs/5.3/getting-started/parcel/',
           title: 'Bootstrap Parcel guide'
         },
-        { 
+        {
           url: 'https://getbootstrap.com/docs/5.3/getting-started/vite/',
           title: 'Bootstrap Vite guide'
         },
-        { 
+        {
           url: 'https://getbootstrap.com/docs/5.3/getting-started/contribute/',
           title: 'Contributing to Bootstrap'
         },
@@ -42,6 +42,7 @@ export default {
     <!-- eslint-disable-next-line vue/valid-v-for -->
     <GuideItem
       v-for="item in resources"
+      :key="item.url"
       :href="item.url"
       :text="item.title"
     />
