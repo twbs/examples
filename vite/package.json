@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.6"
+    "bootstrap": "^5.3.7"
   },
   "devDependencies": {
-    "sass": "^1.89.1",
-    "vite": "^6.3.5"
+    "sass": "^1.89.2",
+    "vite": "^7.0.0"
   }
 }
