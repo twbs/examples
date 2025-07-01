@@ -21,19 +21,19 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
-    "bootstrap": "^5.3.6",
+    "bootstrap": "^5.3.7",
     "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.5.4",
+    "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "purgecss": "^7.0.2",
-    "sass": "^1.89.1",
+    "sass": "^1.89.2",
     "sirv-cli": "^3.0.1",
-    "stylelint": "^16.20.0",
-    "stylelint-config-twbs-bootstrap": "^16.0.0"
+    "stylelint": "^16.21.0",
+    "stylelint-config-twbs-bootstrap": "^16.1.0"
   }
 }
