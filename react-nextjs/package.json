@@ -15,11 +15,11 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "bootstrap": "^5.3.8",
-    "next": "^15.4.5",
+    "next": "^15.5.2",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
