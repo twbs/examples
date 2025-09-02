@@ -10,24 +10,26 @@
   "scripts": {
     "build": "next build",
     "start": "next dev",
-    "lint": "next lint",
-    "fix": "next lint --fix",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
     "test": "npm run build"
   },
   "dependencies": {
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "bootstrap": "^5.3.8",
-    "next": "^15.4.5",
+    "next": "^15.5.2",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "eslint": "^9.32.0",
-    "eslint-config-next": "^15.4.5",
-    "sass": "^1.89.2"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "eslint-config-next": "^15.5.2",
+    "sass": "^1.91.0"
   }
 }
