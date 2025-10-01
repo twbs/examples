@@ -18,7 +18,7 @@
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.15.4",
+    "@parcel/transformer-sass": "^2.16.0",
     "parcel": "^2.15.4",
     "svgo": "^4.0.0"
   }
