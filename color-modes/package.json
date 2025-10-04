@@ -29,9 +29,9 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "sass": "^1.91.0",
+    "sass": "^1.93.2",
     "sirv-cli": "^3.0.1",
-    "stylelint": "^16.23.1",
+    "stylelint": "^16.25.0",
     "stylelint-config-twbs-bootstrap": "^16.1.0"
   }
 }
