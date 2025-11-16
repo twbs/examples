@@ -1,4 +1,4 @@
 module.exports = {
-  silenceDeprecations: ['import', 'mixed-decls', 'color-functions', 'global-builtin']
+  silenceDeprecations: ['import', 'color-functions', 'global-builtin']
 }
 
