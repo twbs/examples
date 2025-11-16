@@ -50,7 +50,6 @@ module.exports = {
               sassOptions: {
                 // Silence Sass deprecation warnings
                 silenceDeprecations: [
-                  'mixed-decls',
                   'color-functions',
                   'global-builtin',
                   'import'
