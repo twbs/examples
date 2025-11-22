@@ -30,6 +30,6 @@
     "@eslint/js": "^9.39.1",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.3",
-    "sass": "^1.94.1"
+    "sass": "^1.94.2"
   }
 }
