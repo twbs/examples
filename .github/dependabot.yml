@@ -3,10 +3,14 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
-    labels:
-      - dependencies
     schedule:
       interval: monthly
+    labels:
+      - dependencies
+    groups:
+      github-actions:
+        patterns:
+          - "*"
   - package-ecosystem: npm
     directory: "/"
     labels:
