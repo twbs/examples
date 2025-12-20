@@ -52,7 +52,8 @@ module.exports = {
                 silenceDeprecations: [
                   'color-functions',
                   'global-builtin',
-                  'import'
+                  'import',
+                  'if-function',
                 ]
               }
             }

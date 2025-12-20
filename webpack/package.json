@@ -18,14 +18,14 @@
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.4.23",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.5",
     "postcss-loader": "^8.2.0",
-    "sass": "^1.94.2",
+    "sass": "^1.97.1",
     "sass-loader": "^16.0.6",
     "style-loader": "^4.0.0",
-    "webpack": "^5.103.0",
+    "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
   }
