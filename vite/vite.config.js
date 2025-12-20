@@ -16,6 +16,7 @@ export default {
             'color-functions',
             'global-builtin',
             'legacy-js-api',
+            'if-function'
           ],
         },
     },
