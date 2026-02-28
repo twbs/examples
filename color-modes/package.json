@@ -24,7 +24,7 @@
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.4.27",
     "nodemon": "^3.1.14",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
