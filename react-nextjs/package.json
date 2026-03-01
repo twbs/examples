@@ -15,7 +15,7 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@types/node": "^25.3.2",
+    "@types/node": "^25.3.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "bootstrap": "^5.3.8",
