@@ -5,7 +5,7 @@
   "repository": "twbs/examples",
   "license": "MIT",
   "stackblitz": {
-    "startCommand": "npm start"
+    "startCommand": "next dev --webpack"
   },
   "scripts": {
     "build": "next build",
