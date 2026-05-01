@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "sass": "^1.99.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.4",
