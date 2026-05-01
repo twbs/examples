@@ -30,6 +30,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    ignore:
+      - dependency-name: "stylelint"
+        update-types:
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
     groups:
       production-dependencies:
         dependency-type: "production"
@@ -42,6 +47,11 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    ignore:
+      - dependency-name: "stylelint"
+        update-types:
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
     groups:
       production-dependencies:
         dependency-type: "production"
@@ -72,24 +82,34 @@ updates:
       development-dependencies:
         dependency-type: "development"
   - package-ecosystem: npm
-    directory: "/sass-js-esm"
-    labels:
-      - dependencies
-    schedule:
-      interval: monthly
-    versioning-strategy: increase
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
-  - package-ecosystem: npm
     directory: "/sass-js"
     labels:
       - dependencies
     schedule:
       interval: monthly
     versioning-strategy: increase
+    ignore:
+      - dependency-name: "stylelint"
+        update-types:
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
+  - package-ecosystem: npm
+    directory: "/sass-js-esm"
+    labels:
+      - dependencies
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+    ignore:
+      - dependency-name: "stylelint"
+        update-types:
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
     groups:
       production-dependencies:
         dependency-type: "production"
