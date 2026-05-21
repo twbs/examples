@@ -15,14 +15,14 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.8.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "bootstrap": "^5.3.8",
     "next": "^16.2.6",
-    "react": "^19.2.4",
+    "react": "^19.2.6",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.2.4",
+    "react-dom": "^19.2.6",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
