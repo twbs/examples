@@ -1,6 +1,7 @@
 {
   "name": "vue",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vue and Vite.",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
   "repository": "twbs/examples",
