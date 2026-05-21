@@ -17,6 +17,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
@@ -29,6 +31,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     ignore:
       - dependency-name: "stylelint"
@@ -46,6 +50,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     ignore:
       - dependency-name: "stylelint"
@@ -63,6 +69,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
@@ -75,6 +83,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
@@ -87,6 +97,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     ignore:
       - dependency-name: "stylelint"
@@ -104,6 +116,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     ignore:
       - dependency-name: "stylelint"
@@ -121,6 +135,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
@@ -133,6 +149,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
@@ -145,6 +163,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
@@ -157,6 +177,8 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     versioning-strategy: increase
     groups:
       production-dependencies:
