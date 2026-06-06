@@ -27,7 +27,7 @@
     "@vitejs/plugin-vue": "^6.0.6",
     "eslint": "^10.3.0",
     "eslint-plugin-vue": "^10.9.1",
-    "sass": "^1.99.0",
+    "sass": "^1.100.0",
     "sass-loader": "^16.0.8",
     "vite": "^8.0.13",
     "vue-eslint-parser": "^10.4.0",
