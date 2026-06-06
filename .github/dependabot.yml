@@ -5,6 +5,9 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     labels:
       - dependencies
     groups:
@@ -17,6 +20,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -31,6 +37,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -50,6 +59,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -69,6 +81,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -83,6 +98,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -97,6 +115,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -116,6 +137,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -135,6 +159,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -149,6 +176,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -163,6 +193,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
@@ -177,6 +210,9 @@ updates:
       - dependencies
     schedule:
       interval: monthly
+      day: 'monday'
+      time: '05:00'
+      timezone: 'Europe/Paris'
     cooldown:
       default-days: 7
     versioning-strategy: increase
