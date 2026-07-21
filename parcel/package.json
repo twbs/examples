@@ -21,6 +21,6 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.16.4",
-    "svgo": "^4.0.1"
+    "svgo": "^4.0.2"
   }
 }
