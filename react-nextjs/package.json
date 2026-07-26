@@ -26,9 +26,9 @@
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
-    "@eslint/js": "^9.39.4",
-    "eslint": "^9.39.4",
+    "@eslint/eslintrc": "^3.3.6",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.7.0",
     "eslint-config-next": "^16.2.9",
     "sass": "^1.101.0"
   }
