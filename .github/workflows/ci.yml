@@ -29,7 +29,6 @@ jobs:
           - "color-modes"
           - "icons-font"
           - "parcel"
-          - "react-nextjs"
           - "sass-js"
           - "sass-js-esm"
           - "starter"

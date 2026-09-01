@@ -2,15 +2,16 @@
 // Import Bootstrap
 //
 
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap";
 
 
 //
 // Import Bootstrap Icons w/ custom path to fonts folder
 //
 
-$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
-@import "bootstrap-icons/font/bootstrap-icons";
+@use "bootstrap-icons/font/bootstrap-icons" with (
+  $bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts"
+);
 
 
 //

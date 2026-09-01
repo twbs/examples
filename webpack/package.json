@@ -14,8 +14,8 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8"
+    "@floating-ui/dom": "^1.7.6",
+    "bootstrap": "github:twbs/bootstrap#v6-dev"
   },
   "devDependencies": {
     "autoprefixer": "^10.5.4",
