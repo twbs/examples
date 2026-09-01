@@ -7,17 +7,4 @@ export default defineConfig({
   server: {
     port: 8080
   },
-  css: {
-    preprocessorOptions: {
-        scss: {
-          silenceDeprecations: [
-            'import',
-            'color-functions',
-            'global-builtin',
-            'legacy-js-api',
-            'if-function',
-          ],
-        },
-    },
-  },
 })

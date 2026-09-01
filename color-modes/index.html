@@ -27,106 +27,100 @@
     </svg>
 
     <div class="container py-4 px-3 mx-auto">
-      <header class="d-md-flex align-items-md-center pb-3 mb-5 border-bottom">
+      <header class="md:d-flex md:align-items-center pb-3 mb-5 border-bottom">
         <h1 class="h4 me-auto">
-          <a href="/" class="d-flex align-items-center text-body text-decoration-none">
+          <a href="/" class="d-flex align-items-center fg-body text-decoration-none">
             <svg class="d-inline-block me-2" width="40" height="32"><use href="#bootstrap"></use></svg>
             <span>Color Modes</span>
           </a>
         </h1>
         <div class="d-flex align-items-center gap-3">
-          <div class="d-flex align-items-center dropdown color-modes">
-            <button class="btn btn-link px-0 text-decoration-none dropdown-toggle d-flex align-items-center"
+          <div class="d-flex align-items-center color-modes">
+            <button class="btn-link px-0 text-decoration-none d-flex align-items-center"
                     id="bd-theme"
                     type="button"
                     aria-expanded="false"
-                    data-bs-toggle="dropdown"
-                    data-bs-display="static">
+                    data-bs-toggle="menu"
+                    data-bs-placement="bottom-end">
               <svg class="bi my-1 me-2 theme-icon-active"><use href="#circle-half"></use></svg>
               <span class="ms-2" id="bd-theme-text">Toggle theme</span>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--bs-dropdown-min-width: 8rem;">
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
-                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                  Light
-                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
-                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                  Dark
-                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
-                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                  Auto
-                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                </button>
-              </li>
-            </ul>
+            <div class="menu" aria-labelledby="bd-theme" style="--menu-min-width: 8rem;">
+              <button type="button" class="menu-item d-flex align-items-center" data-bs-theme-value="light">
+                <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+              </button>
+              <button type="button" class="menu-item d-flex align-items-center" data-bs-theme-value="dark">
+                <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+              </button>
+              <button type="button" class="menu-item d-flex align-items-center active" data-bs-theme-value="auto">
+                <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+              </button>
+            </div>
           </div>
-          <a href="https://github.com/twbs/examples/tree/main/color-modes/" target="_blank" rel="noopener" class="text-decoration-none">View on GitHub</a>
+          <a href="https://github.com/twbs/examples/tree/v6-dev/color-modes/" target="_blank" rel="noopener" class="text-decoration-none">View on GitHub</a>
         </div>
       </header>
 
       <h1>Get started with Bootstrap color modes</h1>
       <div class="col-lg-8 px-0">
-        <p class="fs-4">You've successfully loaded up the Bootstrap Color Modes example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a>, Sass, and <a href="https://github.com/guybedford/es-module-shims">ES Modules Shims</a> for our JavaScript plugins, and our documentation's color mode picker.</p>
+        <p class="fs-xl">You've successfully loaded up the Bootstrap Color Modes example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 6</a>, Sass, and <a href="https://github.com/guybedford/es-module-shims">ES Modules Shims</a> for our JavaScript plugins, and our documentation's color mode picker.</p>
         <p>If this button appears blue and the link appears purple, everything is working. Check out the <strong>Toggle theme</strong> button at the top of the page to switch between color modes.</p>
       </div>
 
-      <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
-      <a id="popoverButton" class="text-success" href="#" role="button" data-bs-toggle="popover" title="Custom popover" data-bs-content="This popover is created thanks to an ESM shim.">Example popover</a>
+      <button type="button" class="btn-solid theme-primary me-3" data-bs-toggle="drawer" data-bs-target="#drawerExample">Toggle drawer</button>
+      <a id="popoverButton" class="fg-success" href="#" role="button" data-bs-toggle="popover" title="Custom popover" data-bs-content="This popover is created thanks to an ESM shim.">Example popover</a>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="drawerExample" aria-labelledby="drawerExampleLabel">
+        <div class="drawer-header">
+          <h5 class="drawer-title" id="drawerExampleLabel">Drawer</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="drawer" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="drawer-body">
           <div>
             Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <button class="btn-solid theme-secondary mt-3" type="button" id="menuButton" data-bs-toggle="menu">
+            Menu button
+          </button>
+          <div class="menu" aria-labelledby="menuButton">
+            <a class="menu-item" href="#">Action</a>
+            <a class="menu-item" href="#">Another action</a>
+            <a class="menu-item" href="#">Something else here</a>
           </div>
         </div>
-      </div>
+      </dialog>
 
       <hr class="col-1 my-5 mx-0">
 
       <h2>Guides</h2>
       <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
       <ul class="icon-list">
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap quick start guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/vite/">Bootstrap Vite guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/contribute/">Contributing to Bootstrap</a></li>
+        <li><a href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/quickstart/">Bootstrap quick start guide</a></li>
+        <li><a href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/webpack/">Bootstrap Webpack guide</a></li>
+        <li><a href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/parcel/">Bootstrap Parcel guide</a></li>
+        <li><a href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/vite/">Bootstrap Vite guide</a></li>
+        <li><a href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/contribute/">Contributing to Bootstrap</a></li>
       </ul>
 
       <hr class="mt-5 mb-4">
 
-      <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+      <p class="fg-secondary">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
     </div>
 
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.5/dist/es-module-shims.js"></script>
+    <!-- Bootstrap v6 alpha isn't published to npm/CDN yet, so this points at the v6-dev branch's built JS instead of a versioned release. -->
     <script type="importmap">
     {
       "imports": {
-        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.js",
-        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.esm.min.js"
+        "@floating-ui/dom": "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.8.0/+esm",
+        "vanilla-calendar-pro": "https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.3.1/+esm",
+        "bootstrap": "https://rawcdn.githack.com/twbs/bootstrap/v6-dev/dist/js/bootstrap.min.js"
       }
     }
     </script>

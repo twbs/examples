@@ -18,8 +18,8 @@
     "test": "npm run build && npm run lint"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8",
+    "@floating-ui/dom": "^1.7.6",
+    "bootstrap": "github:twbs/bootstrap#v6-dev",
     "vue": "^3.5.31"
   },
   "devDependencies": {

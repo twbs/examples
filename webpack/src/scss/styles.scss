@@ -18,78 +18,100 @@
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+// @use "bootstrap/scss/bootstrap";
 
 // Option 2
 //
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
-// Toggle global options
-$enable-gradients: true;
-$enable-shadows: true;
-
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+// Toggle global options and customize some defaults
+@use "bootstrap/scss/config" with (
+  $enable-gradients: true,
+  $enable-shadows: true,
+  $radius: .4rem
+);
 
 // Include functions first
-@import "bootstrap/scss/functions";
+@use "bootstrap/scss/functions";
 
-// Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #7952b3;
+// Customize the theme colors
+//
+// Nested theme-color maps merge one level deep, so pass the whole sub-map
+// for a color to change every role it's used in (buttons, alerts, text, etc.).
+// $theme-bgs/$theme-fgs' "body" keys back --bg-body/--fg-body, which
+// power the page's background and text color.
+@use "bootstrap/scss/theme" with (
+  $theme-colors: (
+    "success": (
+      "base": #7952b3,
+      "fg": #7952b3,
+      "fg-emphasis": #4a3169,
+      "bg": #7952b3,
+      "bg-subtle": light-dark(#efe9f5, #2d2140),
+      "bg-muted": light-dark(#d9cce9, #4a3169),
+      "border": light-dark(#b79bd6, #6b4a94),
+      "focus-ring": color-mix(in oklch, #7952b3 50%, var(--bg-body)),
+      "contrast": var(--white)
+    )
+  ),
+  $theme-bgs: (
+    "body": #fff
+  ),
+  $theme-fgs: (
+    "body": #333
+  )
+);
 
 // Required
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/variables-dark";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
+@use "bootstrap/scss/root";
+@use "bootstrap/scss/content/reboot";
 
-@import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
-@import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/accordion";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
-// @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
-@import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/offcanvas"; // Requires transitions
-// @import "bootstrap/scss/placeholders";
+@use "bootstrap/scss/layout/containers";
+@use "bootstrap/scss/layout/grid";
+// @use "bootstrap/scss/content/tables";
+// @use "bootstrap/scss/forms";
+@use "bootstrap/scss/buttons/button";
+@use "bootstrap/scss/transitions";
+@use "bootstrap/scss/menu";
+// @use "bootstrap/scss/buttons/button-group";
+// @use "bootstrap/scss/nav";
+// @use "bootstrap/scss/navbar"; // Requires nav
+// @use "bootstrap/scss/card";
+// @use "bootstrap/scss/breadcrumb";
+// @use "bootstrap/scss/accordion";
+// @use "bootstrap/scss/pagination";
+// @use "bootstrap/scss/badge";
+// @use "bootstrap/scss/alert";
+// @use "bootstrap/scss/progress";
+// @use "bootstrap/scss/list-group";
+@use "bootstrap/scss/buttons/close";
+// @use "bootstrap/scss/toasts";
+@use "bootstrap/scss/dialog"; // Requires transitions
+// @use "bootstrap/scss/tooltip";
+@use "bootstrap/scss/popover";
+// @use "bootstrap/scss/carousel";
+// @use "bootstrap/scss/spinner";
+@use "bootstrap/scss/drawer" with ( // Requires transitions
+  $drawer-tokens: (
+    --drawer-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
+  )
+);
+// @use "bootstrap/scss/placeholder";
 
 // Helpers
-// @import "bootstrap/scss/helpers";
+@use "bootstrap/scss/helpers/theme-colors";
+// @use "bootstrap/scss/helpers";
 
 // Utilities
-@import "bootstrap/scss/utilities/api";
+@use "bootstrap/scss/utilities";
+@use "bootstrap/scss/utilities/api";
 
 
 //
 // Custom styles
 //
 
-@import "icon-list";
+@use "icon-list";
 
 body {
   padding: 1.5rem;

@@ -1,5 +1,7 @@
 // Example of a custom component
 
+@use "bootstrap/scss/mixins/color-mode" as *;
+
 .icon-list {
   padding-left: 0;
   list-style: none;
