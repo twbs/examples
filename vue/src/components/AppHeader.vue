@@ -9,6 +9,6 @@
         <span>Vue</span>
       </a>
     </h1>
-    <a href="https://github.com/twbs/examples/tree/v6-dev/vue/" target="_blank" rel="noopener">View on GitHub</a>
+    <a href="https://github.com/twbs/examples/tree/main/vue/" target="_blank" rel="noopener">View on GitHub</a>
   </header>
 </template>

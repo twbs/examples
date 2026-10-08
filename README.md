@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
+    <img src="https://getbootstrap.com/docs/6.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
   </a>
 </p>
 
@@ -9,13 +9,13 @@
 <p align="center">
   Functional examples for building with Bootstrap using popular tools and frameworks.
   <br>
-  <a href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/"><strong>Explore Bootstrap docs »</strong></a>
+  <a href="https://getbootstrap.com/docs/6.0/"><strong>Explore Bootstrap docs »</strong></a>
 </p>
 
 > [!IMPORTANT]
-> This `v6-dev` branch previews [Bootstrap v6](https://github.com/twbs/bootstrap/tree/v6-dev), which is still in early alpha development. Expect frequent, breaking changes, and expect this branch to lag behind [`main`](https://github.com/twbs/examples/tree/main) (which tracks the stable Bootstrap 5 release) while both are maintained in parallel. See [issue #996](https://github.com/twbs/examples/issues/996) for background.
+> These examples use the [Bootstrap v6 alpha](https://getbootstrap.com/docs/6.0/). For Bootstrap 5 examples, see the [`v5-dev` branch](https://github.com/twbs/examples/tree/v5-dev).
 >
-> The React example is temporarily removed from this branch: it depends on [React Bootstrap](https://react-bootstrap.github.io/), which has no Bootstrap v6-compatible release yet and renders its own v5 markup, so it can't work against v6's CSS. It'll come back once React Bootstrap ships v6 support, or as a rewrite using plain Bootstrap markup instead. Find it on [`main`](https://github.com/twbs/examples/tree/main/react-nextjs) in the meantime.
+> The React example is temporarily unavailable because [React Bootstrap](https://react-bootstrap.github.io/) does not support Bootstrap v6 yet. Find its Bootstrap 5 version on [`v5-dev`](https://github.com/twbs/examples/tree/v5-dev/react-nextjs).
 
 ## Directory
 

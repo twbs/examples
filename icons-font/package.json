@@ -21,7 +21,7 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
-    "bootstrap": "github:twbs/bootstrap#v6-dev",
+    "bootstrap": "^6.0.0-alpha.1",
     "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {

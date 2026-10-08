@@ -8,23 +8,23 @@ export default {
     return {
       resources: [
         {
-          url: 'https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/quickstart/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/quickstart/',
           title: 'Bootstrap quick start guide'
         },
         {
-          url: 'https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/webpack/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/webpack/',
           title: 'Bootstrap Webpack guide'
         },
         {
-          url: 'https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/parcel/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/parcel/',
           title: 'Bootstrap Parcel guide'
         },
         {
-          url: 'https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/vite/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/vite/',
           title: 'Bootstrap Vite guide'
         },
         {
-          url: 'https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/guides/contribute/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/contribute/',
           title: 'Contributing to Bootstrap'
         },
       ]
