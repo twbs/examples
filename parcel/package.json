@@ -16,7 +16,7 @@
   "dependencies": {
     "@floating-ui/dom": "^1.7.6",
     "bootstrap": "^6.0.0-alpha.1",
-    "sass": "^1.103.1"
+    "sass": "^1.105.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.4",
