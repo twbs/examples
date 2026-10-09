@@ -15,8 +15,33 @@ permissions:
   contents: read
 
 jobs:
+  changes:
+    name: Detect changed examples
+    runs-on: ubuntu-latest
+    outputs:
+      projects: ${{ steps.detect.outputs.projects }}
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Detect changed examples
+        id: detect
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          EVENT_NAME: ${{ github.event_name }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          projects="$(node .github/scripts/changed-examples.mjs "$EVENT_NAME" "$BASE_SHA" "$HEAD_SHA")"
+          echo "projects=$projects" >> "$GITHUB_OUTPUT"
+
   ci:
     name: ${{ matrix.project }}
+    needs: changes
+    if: needs.changes.outputs.projects != '[]'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -25,17 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project:
-          - "color-modes"
-          - "icons-font"
-          - "parcel"
-          - "react-nextjs"
-          - "sass-js"
-          - "sass-js-esm"
-          - "starter"
-          - "vite"
-          - "vue"
-          - "webpack"
+        project: ${{ fromJSON(needs.changes.outputs.projects) }}
 
     steps:
       - name: Clone repository

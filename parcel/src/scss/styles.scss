@@ -18,78 +18,100 @@
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+// @use "~/node_modules/bootstrap/scss/bootstrap";
 
 // Option 2
 //
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
-// Toggle global options
-$enable-gradients: true;
-$enable-shadows: true;
-
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+// Toggle global options and customize some defaults
+@use "~/node_modules/bootstrap/scss/config" with (
+  $enable-gradients: true,
+  $enable-shadows: true,
+  $radius: .4rem
+);
 
 // Include functions first
-@import "~/node_modules/bootstrap/scss/functions";
+@use "~/node_modules/bootstrap/scss/functions";
 
-// Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #7952b3;
+// Customize the theme colors
+//
+// Nested theme-color maps merge one level deep, so pass the whole sub-map
+// for a color to change every role it's used in (buttons, alerts, text, etc.).
+// $theme-bgs/$theme-fgs' "body" keys back --bg-body/--fg-body, which
+// power the page's background and text color.
+@use "~/node_modules/bootstrap/scss/theme" with (
+  $theme-colors: (
+    "success": (
+      "base": #7952b3,
+      "fg": #7952b3,
+      "fg-emphasis": #4a3169,
+      "bg": #7952b3,
+      "bg-subtle": light-dark(#efe9f5, #2d2140),
+      "bg-muted": light-dark(#d9cce9, #4a3169),
+      "border": light-dark(#b79bd6, #6b4a94),
+      "focus-ring": color-mix(in oklch, #7952b3 50%, var(--bg-body)),
+      "contrast": var(--white)
+    )
+  ),
+  $theme-bgs: (
+    "body": #fff
+  ),
+  $theme-fgs: (
+    "body": #333
+  )
+);
 
 // Required
-@import "~/node_modules/bootstrap/scss/variables";
-@import "~/node_modules/bootstrap/scss/variables-dark";
-@import "~/node_modules/bootstrap/scss/maps";
-@import "~/node_modules/bootstrap/scss/mixins";
-@import "~/node_modules/bootstrap/scss/utilities";
-@import "~/node_modules/bootstrap/scss/root";
-@import "~/node_modules/bootstrap/scss/reboot";
+@use "~/node_modules/bootstrap/scss/root";
+@use "~/node_modules/bootstrap/scss/content/reboot";
 
-@import "~/node_modules/bootstrap/scss/type";
-// @import "~/node_modules/bootstrap/scss/images";
-@import "~/node_modules/bootstrap/scss/containers";
-@import "~/node_modules/bootstrap/scss/grid";
-// @import "~/node_modules/bootstrap/scss/tables";
-// @import "~/node_modules/bootstrap/scss/forms";
-@import "~/node_modules/bootstrap/scss/buttons";
-@import "~/node_modules/bootstrap/scss/transitions";
-@import "~/node_modules/bootstrap/scss/dropdown";
-// @import "~/node_modules/bootstrap/scss/button-group";
-// @import "~/node_modules/bootstrap/scss/nav";
-// @import "~/node_modules/bootstrap/scss/navbar"; // Requires nav
-// @import "~/node_modules/bootstrap/scss/card";
-// @import "~/node_modules/bootstrap/scss/breadcrumb";
-// @import "~/node_modules/bootstrap/scss/accordion";
-// @import "~/node_modules/bootstrap/scss/pagination";
-// @import "~/node_modules/bootstrap/scss/badge";
-// @import "~/node_modules/bootstrap/scss/alert";
-// @import "~/node_modules/bootstrap/scss/progress";
-// @import "~/node_modules/bootstrap/scss/list-group";
-@import "~/node_modules/bootstrap/scss/close";
-// @import "~/node_modules/bootstrap/scss/toasts";
-@import "~/node_modules/bootstrap/scss/modal"; // Requires transitions
-// @import "~/node_modules/bootstrap/scss/tooltip";
-@import "~/node_modules/bootstrap/scss/popover";
-// @import "~/node_modules/bootstrap/scss/carousel";
-// @import "~/node_modules/bootstrap/scss/spinners";
-@import "~/node_modules/bootstrap/scss/offcanvas"; // Requires transitions
-// @import "~/node_modules/bootstrap/scss/placeholders";
+@use "~/node_modules/bootstrap/scss/layout/containers";
+@use "~/node_modules/bootstrap/scss/layout/grid";
+// @use "~/node_modules/bootstrap/scss/content/tables";
+// @use "~/node_modules/bootstrap/scss/forms";
+@use "~/node_modules/bootstrap/scss/buttons/button";
+@use "~/node_modules/bootstrap/scss/transitions";
+@use "~/node_modules/bootstrap/scss/menu";
+// @use "~/node_modules/bootstrap/scss/buttons/button-group";
+// @use "~/node_modules/bootstrap/scss/nav";
+// @use "~/node_modules/bootstrap/scss/navbar"; // Requires nav
+// @use "~/node_modules/bootstrap/scss/card";
+// @use "~/node_modules/bootstrap/scss/breadcrumb";
+// @use "~/node_modules/bootstrap/scss/accordion";
+// @use "~/node_modules/bootstrap/scss/pagination";
+// @use "~/node_modules/bootstrap/scss/badge";
+// @use "~/node_modules/bootstrap/scss/alert";
+// @use "~/node_modules/bootstrap/scss/progress";
+// @use "~/node_modules/bootstrap/scss/list-group";
+@use "~/node_modules/bootstrap/scss/buttons/close";
+// @use "~/node_modules/bootstrap/scss/toasts";
+@use "~/node_modules/bootstrap/scss/dialog"; // Requires transitions
+// @use "~/node_modules/bootstrap/scss/tooltip";
+@use "~/node_modules/bootstrap/scss/popover";
+// @use "~/node_modules/bootstrap/scss/carousel";
+// @use "~/node_modules/bootstrap/scss/spinner";
+@use "~/node_modules/bootstrap/scss/drawer" with ( // Requires transitions
+  $drawer-tokens: (
+    --drawer-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
+  )
+);
+// @use "~/node_modules/bootstrap/scss/placeholder";
 
 // Helpers
-// @import "~/node_modules/bootstrap/scss/helpers";
+@use "~/node_modules/bootstrap/scss/helpers/theme-colors";
+// @use "~/node_modules/bootstrap/scss/helpers";
 
 // Utilities
-@import "~/node_modules/bootstrap/scss/utilities/api";
+@use "~/node_modules/bootstrap/scss/utilities";
+@use "~/node_modules/bootstrap/scss/utilities/api";
 
 
 //
 // Custom styles
 //
 
-@import "icon-list";
+@use "icon-list";
 
 body {
   padding: 1.5rem;

@@ -1,5 +1,8 @@
 # Bootstrap starter
 
+> [!IMPORTANT]
+> This example uses the [Bootstrap v6 alpha](https://getbootstrap.com/docs/6.0/). For the Bootstrap 5 version, see the [`v5-dev` branch](https://github.com/twbs/examples/tree/v5-dev/starter).
+
 Include [Bootstrap](https://getbootstrap.com) CSS and JS via the [jsDelivr CDN](https://www.jsdelivr.com/package/npm/bootstrap).
 
 ## Edit in browser

@@ -8,23 +8,23 @@ export default {
     return {
       resources: [
         {
-          url: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/quickstart/',
           title: 'Bootstrap quick start guide'
         },
         {
-          url: 'https://getbootstrap.com/docs/5.3/getting-started/webpack/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/webpack/',
           title: 'Bootstrap Webpack guide'
         },
         {
-          url: 'https://getbootstrap.com/docs/5.3/getting-started/parcel/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/parcel/',
           title: 'Bootstrap Parcel guide'
         },
         {
-          url: 'https://getbootstrap.com/docs/5.3/getting-started/vite/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/vite/',
           title: 'Bootstrap Vite guide'
         },
         {
-          url: 'https://getbootstrap.com/docs/5.3/getting-started/contribute/',
+          url: 'https://getbootstrap.com/docs/6.0/guides/contribute/',
           title: 'Contributing to Bootstrap'
         },
       ]

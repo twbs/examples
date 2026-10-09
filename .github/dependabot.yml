@@ -93,23 +93,6 @@ updates:
       development-dependencies:
         dependency-type: "development"
   - package-ecosystem: npm
-    directory: "/react-nextjs"
-    labels:
-      - dependencies
-    schedule:
-      interval: monthly
-      day: 'monday'
-      time: '05:00'
-      timezone: 'Europe/Paris'
-    cooldown:
-      default-days: 7
-    versioning-strategy: increase
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
-  - package-ecosystem: npm
     directory: "/sass-js"
     labels:
       - dependencies
