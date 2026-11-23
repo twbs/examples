@@ -18,8 +18,8 @@
     "test": "npm run build && npm run lint"
   },
   "dependencies": {
-    "@floating-ui/dom": "^1.7.6",
-    "bootstrap": "^6.0.0-alpha.1",
+    "@floating-ui/dom": "^1.8.0",
+    "bootstrap": "^6.0.0-alpha.2",
     "vue": "^3.5.44"
   },
   "devDependencies": {

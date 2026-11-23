@@ -1,5 +1,5 @@
 <template>
-  <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
+  <header class="d-flex justify-content-between md:align-items-center pb-3 mb-5 border-bottom">
     <h1 class="h4">
       <a href="/" class="d-flex align-items-center fg-body text-decoration-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bootstrap-fill d-inline-block me-2" viewBox="0 0 16 16">

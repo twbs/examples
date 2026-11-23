@@ -14,8 +14,8 @@
     "test": "npm run build"
   },
   "dependencies": {
-    "@floating-ui/dom": "^1.7.6",
-    "bootstrap": "^6.0.0-alpha.1"
+    "@floating-ui/dom": "^1.8.0",
+    "bootstrap": "^6.0.0-alpha.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.6.1",
