@@ -9,7 +9,7 @@ import Footer from '../components/AppFooter.vue'
     <Header />
 
     <h1>Build Bootstrap with Vue</h1>
-    <div class="col-lg-8 px-0">
+    <div class="lg:col-8 px-0">
       <p class="fs-xl">You've successfully loaded the Bootstrap + Vue example! It's loaded up with <a href="https://getbootstrap.com/">Bootstrap 6</a> and uses Vue and Vite to compile and bundle our Sass and JavaScript. It also features a handful of custom Vue components.</p>
       <p>If this button appears blue and the link appears purple, you've done it!</p>
     </div>
@@ -20,7 +20,7 @@ import Footer from '../components/AppFooter.vue'
     <dialog class="drawer drawer-end" tabindex="-1" id="drawerExample" aria-labelledby="drawerExampleLabel">
       <div class="drawer-header">
         <h5 class="drawer-title" id="drawerExampleLabel">Drawer</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="drawer" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
       <div class="drawer-body">
         <div>
