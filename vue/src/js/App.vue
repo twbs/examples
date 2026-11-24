@@ -15,7 +15,7 @@ import Footer from '../components/AppFooter.vue'
     </div>
 
     <button type="button" class="btn-solid theme-primary me-3" data-bs-toggle="drawer" data-bs-target="#drawerExample">Toggle drawer</button>
-    <a id="popoverButton" class="fg-success" href="#" role="button" data-bs-toggle="popover" title="Custom popover" data-bs-content="This is a Bootstrap popover.">Example popover</a>
+    <button type="button" id="popoverButton" class="btn-link theme-success px-0" data-bs-toggle="popover" title="Custom popover" data-bs-content="This is a Bootstrap popover.">Example popover</button>
 
     <dialog class="drawer drawer-end" tabindex="-1" id="drawerExample" aria-labelledby="drawerExampleLabel">
       <div class="drawer-header">
